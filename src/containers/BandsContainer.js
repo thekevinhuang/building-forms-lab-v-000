@@ -8,7 +8,7 @@ class BandsContainer extends Component {
     return(
       <div>
         <BandInput addBand={this.props.addBand}/>
-
+        <Bands bands={this.props.bands}
       </div>
     )
   }
@@ -16,7 +16,7 @@ class BandsContainer extends Component {
 
 const mapStateToProps = (state) => {
   return {
-    state: state.bands
+    bands: state.bands
   }
 }
 
