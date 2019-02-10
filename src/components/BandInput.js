@@ -18,7 +18,7 @@ class BandInput extends Component {
 
   handleSubmit = event => {
     event.preventDefault()
-
+    this.props.addBand(this.state)
   }
 
   render() {
@@ -33,8 +33,4 @@ class BandInput extends Component {
   }
 }
 
-const mapDispatchToProps = dispatch => {
-  
-}
-
-export default connect(null, mapDispatchToProps)(BandInput)
+export default BandInput
