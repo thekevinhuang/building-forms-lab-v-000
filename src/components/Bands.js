@@ -12,7 +12,7 @@ class Bands extends Component {
   render() {
     return (
       <ul>
-
+        {this.constructList()}
       </ul>
     )
   }
