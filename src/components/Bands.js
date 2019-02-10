@@ -5,10 +5,14 @@ class Bands extends Component {
     super()
   }
 
+  constructList() {
+    this.props.bands.map((band,index)=><li>{band.name}</li>)
+  }
+
   render() {
     return (
       <ul>
-
+        
       </ul>
     )
   }
